@@ -11,7 +11,7 @@ public class InfoController {
 	
 	@GetMapping("/")
 	public String home() {
-		return "Java Spring Boot application is up and running";
+		return "Java Spring Boot application is up and running. Hello from OpenShift :)!";
 	}
 	
 	@GetMapping("/info")
