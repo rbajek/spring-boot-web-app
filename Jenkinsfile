@@ -1,6 +1,6 @@
 node('maven') {
    stage('Checkout') {
-	   git branch: 'openshift', url: 'https://github.com/rbajek/spring-boot-web-app.git'
+	   checkout scm
    }
    stage('Build') {
 	   sh "mvn clean package"
